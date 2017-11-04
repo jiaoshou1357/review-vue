@@ -2,12 +2,18 @@
 <div>
  <vDialog :isShowDialog="isShowDialogReg" @on-close="isShowDialogReg=false">
  	<vReg></vReg>
+ </vDialog>
+ <vDialog :isShowDialog="isShowDialoglogin" @on-close="isShowDialoglogin=false">
+  <vReg></vReg>
  </vDialog>	
+ <vDialog :isShowDialog="isShowDialogAbout" @on-close="isShowDialogAbout=false">
+  <vReg></vReg>
+ </vDialog> 
  <div id="header">
   <ul class="right_nav">
   	<li @click="isShowDialogReg=true">注册</li>
-  	<li>登录</li>
-  	<li>关于</li>
+  	<li @click="isShowDialoglogin=true">登录</li>
+  	<li @click="isShowDialogAbout=true">关于</li>
   </ul>	
  </div>	
  <div id="content">
@@ -25,6 +31,8 @@ import vReg from './common/reg'
    data(){
    	return {
       isShowDialogReg:false,
+      isShowDialoglogin:false,
+      isShowDialogAbout:false
    	}
    },
    methods:{
