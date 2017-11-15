@@ -47,7 +47,8 @@ import vReg from './common/reg'
 <style type="text/css">
  *{padding:0px;margin:0px;list-style-type:none;text-decoration:none;border:0px;outline:none;}
  img{display:block;}
- body{font-size:62.5%;font-family:'';}
+ html{font-size:62.5%;}
+ body{font-family:'';}
  #header{width:100%;height:80px;line-height:80px;background:#000;color:white;}
  #header .right_nav{float:right;margin-right:10%;overflow:auto;zoom:1;}
  #header .right_nav li{float:left;margin:5px 20px;font-size:19px;font-weight:600;}
